@@ -1,0 +1,7 @@
+version: '2'
+services:
+  docker-centos-base:
+    build: .
+    image: jameseckersall/docker-centos-base
+    environment:
+      DEBUG: "no"
