@@ -6,6 +6,7 @@ services:
   - docker
 
 before_install:
+  - bundle install
   - docker build -t jameseckersall/docker-centos-base .
 
 script:
