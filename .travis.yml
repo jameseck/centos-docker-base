@@ -9,4 +9,4 @@ before_install:
   - docker build -t jameseckersall/docker-centos-base .
 
 script:
-  - bundle exec rake
+  - rake
