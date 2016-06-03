@@ -68,7 +68,7 @@ case ${1} in
   run)
     check_depending_env
     [[ -f "/hooks/entrypoint-run" ]] && /hooks/entrypoint-run
-    if [[ -e /init/supervisord && -d /etc/supervisor ]]; then
+    if [[ -e /init/supervisord ]]; then
       # Use exec so we replace our current process so signals can get through
       exec /bin/bash /init/supervisord
     else
