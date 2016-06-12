@@ -14,7 +14,7 @@ RUN useradd -u 950 -U -s /bin/false -M -r -G users docker && \
     pip install supervisor && \
     yum clean all && \
     chmod -R 0755 /init/* /hooks/* && \
-    chmod 777 /var/log /var/log/supervisor
+    chmod 777 /var/log
 
 ENTRYPOINT ["/bin/sh", "-e", "/init/entrypoint"]
 CMD ["run"]
